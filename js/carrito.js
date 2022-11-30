@@ -1,9 +1,9 @@
 function armarTablaCarrito(prod) {
     return `<tr>
-                <td>${prod.imagen}</td>
-                <td>${prod.nombre}</td>
+                <td><img src=${prod.imagen} width=40px height=30px></td>
+                <td>${prod.tipo}</td>
                 <td>$ ${prod.precio}</td>
-                <td><button class="button button-add" id="${prod.nombre}">❌</button></td>
+                <td><button class="button button-add" id="${prod.tipo}">❌</button></td>
             </tr>`
 }
 

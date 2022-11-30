@@ -135,6 +135,11 @@ main{
 	column-gap: 20%;
 }
 
+#fotoCarrito{
+	width: 25px;
+	height: auto;
+}
+
 .contCompra{
 	display: flex;
 	align-items: center;

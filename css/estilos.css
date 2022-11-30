@@ -13,6 +13,20 @@ main{
 	justify-content: center;
 }
 
+.btn-carrito a{
+	text-decoration: inherit;
+	color: black;
+}
+
+#imgCarrito{
+	padding: 10px;
+}
+
+.barraBusqueda{
+	border: solid 2px black;
+	padding-left: 10pz;
+}
+
 .container{
     display: flex;
 	flex-wrap: wrap;
@@ -113,6 +127,60 @@ main{
 	color: #fff;
 }
 
+/* CSS PARA CARRITO */
+
+.encabezadoCarrito{
+	display: flex;
+	justify-content: center;
+	column-gap: 20%;
+}
+
+.contCompra{
+	display: flex;
+	align-items: center;
+}
+
+.contCompra a{
+	text-decoration: inherit;
+	color: black;
+}
+
+
+thead tr {
+    background-color: rgb(173, 9, 178);
+    color: white;
+	border-width: 3px!important;
+}
+
+#tablehead {
+    padding: 10px 25px;
+}
+
+tbody td{
+	border-width: 3px!important;
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(173, 216, 230, 0.252) !important;
+}
+
+.btnComprar{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.btnComprar button{
+	border-width: 4px;
+	border-color: rgb(173, 9, 178);
+	background-color: transparent;
+	padding: 5px 7px;
+}
+.aviso{
+	text-align: center;
+	margin-top: 40px;
+}
 footer{
 	text-align: center;
 	margin: 50px;

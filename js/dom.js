@@ -1,17 +1,18 @@
-const carrito = []
+const carrito = JSON.parse(localStorage.getItem("carrito")) || []
 const imgCarrito = document.getElementById("imgCarrito")
 const footer = document.getElementById("footer")
 const logo = document.getElementById("logo")
 const inputBuscar = document.querySelector("input.buscador")
+
+footer.innerHTML = "<p>Copyright 2022 - <br><strong>Comisión 34095 JS - Barragan Natalia</strong></p>"
+logo.src = "fotos/yhabiaunavez.jpg"
+imgCarrito.src = "fotos/cart-2.png"
 
 imgCarrito.addEventListener("mousemove", ()=> {
     let totalProductos = carrito.length
         imgCarrito.title = `${totalProductos} productos en el carrito`
 })
 
-imgCarrito.src = "fotos/cart-2.png"
-footer.innerHTML = "<p>Copyright 2022 - <br><strong>Comisión 34095 JS - Barragan Natalia</strong></p>"
-logo.src = "fotos/yhabiaunavez.jpg"
 
 function subirTarjetas(array) {
     let contenido = ""

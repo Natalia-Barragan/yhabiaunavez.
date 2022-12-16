@@ -40,7 +40,7 @@ main{
 	display: flex;
 	justify-content: space-around;
 	vertical-align: middle;
-	padding-bottom: 15px;
+	padding-bottom: 40px;
     
 }
 .title-cards{	
@@ -85,8 +85,7 @@ main{
 	transition: all 400ms ease-out;
 	cursor: default;
 	flex-wrap: wrap;
-	justify-content: center;
-  
+	max-width: 80%;
 }
 .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -95,9 +94,10 @@ main{
 .card img{
 	width: 420px;
 	height: 220px;
+	max-width: 100%;
 }
 .card .contenido-card{
-	padding: 15px;
+	padding: 20px;
 	text-align: center;
 }
 .card .contenido-card h3{
